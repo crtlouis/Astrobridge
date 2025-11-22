@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌌 Global styles for AstroBridge */
+html, body, #root {
+  @apply bg-black text-white font-sans;
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* 🌠 Navbar and buttons */
+button, a {
+  @apply transition duration-300 ease-in-out;
+}
+
+/* ✨ Smooth hover transitions for buttons */
+button:hover, a:hover {
+  @apply scale-[1.03];
+}
+
+/* 🌎 Utility background helpers (optional for future use) */
+.bg-stars {
+  background-image: url('/assets/starsbg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-earth {
+  background-image: url('/assets/earth.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 💫 Section spacing */
+section {
+  @apply py-20 md:py-28;
+}
+
+/* 🌙 Footer text style */
+footer {
+  @apply text-sm text-white/60 border-t border-white/10 py-10;
+}
+
+/* 🪐 Scrollbar (optional aesthetic) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
